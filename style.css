@@ -1,0 +1,107 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Paleta de colores */
+:root {
+  --color-fondo: #1d1d1d;
+  --color-texto: #ffffff;
+  --color-botones: #ff4d4d;
+  --color-botones-hover: #f90000;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--color-texto);
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 45px;   /* Añade un espacio en la parte superior */
+}
+/* Estilos de inputs y botones */
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.inputs input[type="text"] {
+  background-color: transparent;
+  border: 2px solid var(--color-botones);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  color: var(--color-texto);
+  font-family: 'Press Start 2P', cursive;
+  flex-basis: 45%;
+  width: 500px;
+  height: 250px;
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons button {
+  background-color: var(--color-botones);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.buttons button:hover {
+  background-color: var(--color-botones-hover);
+}
+
+/* Estilos específicos de botones */
+#encriptar {
+  background-image: url('iconos/joystick.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+#desencriptar {
+  background-image: url('iconos/boton.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+#copiar {
+  background-image: url('iconos/mando.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
